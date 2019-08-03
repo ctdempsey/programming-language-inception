@@ -11,7 +11,8 @@ namespace CSharp
             var processInfo = new ProcessStartInfo
             {
                 UseShellExecute = false,
-                FileName = "vbdotnet.exe",
+                FileName = "mono",
+                Arguments = "vbdotnet.exe",
             };
             using (var process = Process.Start(processInfo))
             {
