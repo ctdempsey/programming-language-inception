@@ -2,13 +2,15 @@
 
 int main (int argc, const char * argv[])
 {
-    #define NSLog(FORMAT, ...) fprintf(stderr, "%s\n", [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 
-    // NSLog (@"Hello from Objective-C!");
-    // NSLog (@"Goodbye from Objective-C!");
     printf("Hello from Objective-C!\n");
+    fflush(stdout);
+    NSString *path = @"ruby";
+    NSArray *args = [NSArray arrayWithObjects:@"ruby.rb", nil];
+    [[NSTask launchedTaskWithLaunchPath:path arguments:args] waitUntilExit];
     printf("Goodbye from Objective-C!\n");
+    fflush(stdout);
     [pool drain];
 
     return 0;
