@@ -35,6 +35,7 @@ chained:
 -   [Swift](swift.swift)
 -   [Go](go.go)
 -   [R](r.r)
+-   [D](d.d)
 
 ## Installation and Compilation
 
@@ -51,7 +52,7 @@ into a usable binary, where relevant. A [Makefile](Makefile) has been included
 in the repo that uses the same commands to compile each program that requires
 compiling.
 
-| Language          | Compiler                                                                                                    | Interpreter/<br>Runtime                                                           | Suggested Compile Command                                                                  |
+| Language          | Compiler                                                                                                    | Interpreter/Runtime                                                               | Suggested Compile Command                                                                  |
 | ----------------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
 | Java              | [OpenJDK JDK 8+](https://openjdk.java.net/install/)                                                         | [OpenJDK JRE 8+](https://openjdk.java.net/install/)                               | `javac Java.java`                                                                          |
 | C                 | [GCC](https://gcc.gnu.org/install/)                                                                         |                                                                                   | `gcc c.c -o c.exe`                                                                         |
@@ -66,6 +67,7 @@ compiling.
 | Swift             | [Swift 5.1.4+](https://swift.org/download/)                                                                 |                                                                                   | `swiftc swift.swift -o swift.exe`                                                          |
 | Go                | [Go 1.13.7+](https://golang.org/doc/install)                                                                |                                                                                   | `go build -o go.exe go.go`                                                                 |
 | R                 |                                                                                                             | [R 3.4.4+](https://cran.r-project.org/)                                           |                                                                                            |
+| D                 | [DMD 2.09+](https://dlang.org/download.html)                                                                |                                                                                   | `dmd -of=d.exe d.d`                                                                        |
 
 ## Usage
 
@@ -90,6 +92,7 @@ listed compilation commands were used.
 | Swift             | `./swift.exe`                |
 | Go                | `./go.exe`                   |
 | R                 | `R --vanilla --slave -f r.r` |
+| D                 | `./d.exe`                    |
 
 ## License
 
