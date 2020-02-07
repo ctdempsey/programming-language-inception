@@ -9,10 +9,11 @@ SC = swiftc
 GC = go build
 DC = dmd
 PC = fpc
+DARTC = dart2native
 
 
 .PHONY: all
-all: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe swift.exe go.exe d.exe pascal.exe
+all: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe swift.exe go.exe d.exe pascal.exe dart.exe
 
 
 Java.class: Java.java
@@ -46,11 +47,15 @@ d.exe: d.d
 pascal.exe: pascal.pas
 	$(PC) -o"$@" $?
 
+dart.exe: dart.dart
+	$(DARTC) $?
+
 
 .PHONY: clean
 clean:
 	rm -f Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe
 	rm -f objectivec.d swift.exe go.exe objectivec.d d.o d.exe pascal.o pascal.exe
+	rm -f dart.exe
 
 .PHONY: run
 run:
