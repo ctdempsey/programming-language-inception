@@ -34,6 +34,7 @@ chained:
 -   [Ruby](ruby.rb)
 -   [Swift](swift.swift)
 -   [Go](go.go)
+-   [R](r.r)
 
 ## Installation and Compilation
 
@@ -64,6 +65,7 @@ compiling.
 | Ruby              |                                                                                                             | [Ruby 2.5+](https://www.ruby-lang.org/en/documentation/installation/)             |                                                                                            |
 | Swift             | [Swift 5.1.4+](https://swift.org/download/)                                                                 |                                                                                   | `swiftc swift.swift -o swift.exe`                                                          |
 | Go                | [Go 1.13.7+](https://golang.org/doc/install)                                                                |                                                                                   | `go build -o go.exe go.go`                                                                 |
+| R                 |                                                                                                             | [R 3.4.4+](https://cran.r-project.org/)                                           |                                                                                            |
 
 ## Usage
 
@@ -73,20 +75,21 @@ individual program are listed below, assuming using a typical Linux terminal,
 all required runtimes and interpreters for each program are installed, and the
 listed compilation commands were used.
 
-| Language          | Command                  |
-| ----------------- | ------------------------ |
-| Java              | `java -cp ./ Java.class` |
-| C                 | `./c.exe`                |
-| Python            | `python3 python.py`      |
-| C++               | `./cplusplus.exe`        |
-| C#                | `./CSharp.exe`           |
-| Visual Basic .NET | `./vbdotnet.exe`         |
-| JavaScript        | `node javascript.js`     |
-| PHP               | `php php.php`            |
-| Objective-C       | `./objectivec.exe`       |
-| Ruby              | `ruby ruby.rb`           |
-| Swift             | `./swift.exe`            |
-| Go                | `./go.exe`               |
+| Language          | Command                      |
+| ----------------- | ---------------------------- |
+| Java              | `java -cp ./ Java.class`     |
+| C                 | `./c.exe`                    |
+| Python            | `python3 python.py`          |
+| C++               | `./cplusplus.exe`            |
+| C#                | `./CSharp.exe`               |
+| Visual Basic .NET | `./vbdotnet.exe`             |
+| JavaScript        | `node javascript.js`         |
+| PHP               | `php php.php`                |
+| Objective-C       | `./objectivec.exe`           |
+| Ruby              | `ruby ruby.rb`               |
+| Swift             | `./swift.exe`                |
+| Go                | `./go.exe`                   |
+| R                 | `R --vanilla --slave -f r.r` |
 
 ## License
 
