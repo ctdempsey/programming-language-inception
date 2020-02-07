@@ -36,6 +36,7 @@ chained:
 -   [Go](go.go)
 -   [R](r.r)
 -   [D](d.d)
+-   [Pascal](pascal.pas)
 
 ## Installation and Compilation
 
@@ -68,6 +69,7 @@ compiling.
 | Go                | [Go 1.13.7+](https://golang.org/doc/install)                                                                |                                                                                   | `go build -o go.exe go.go`                                                                 |
 | R                 |                                                                                                             | [R 3.4.4+](https://cran.r-project.org/)                                           |                                                                                            |
 | D                 | [DMD 2.09+](https://dlang.org/download.html)                                                                |                                                                                   | `dmd -of=d.exe d.d`                                                                        |
+| Pascal            | [Free Pascal 3.0.4+](https://www.freepascal.org/download.html)                                              |                                                                                   | `fpc -o"pascal.exe" pascal.pas`                                                            |
 
 ## Usage
 
@@ -93,6 +95,7 @@ listed compilation commands were used.
 | Go                | `./go.exe`                   |
 | R                 | `R --vanilla --slave -f r.r` |
 | D                 | `./d.exe`                    |
+| Pascal            | `./pascal.exe`               |
 
 ## License
 

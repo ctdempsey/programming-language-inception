@@ -8,10 +8,11 @@ OCFLAGS = `gnustep-config --objc-flags` -lgnustep-base -lobjc
 SC = swiftc
 GC = go build
 DC = dmd
+PC = fpc
 
 
 .PHONY: all
-all: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe swift.exe go.exe d.exe
+all: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe swift.exe go.exe d.exe pascal.exe
 
 
 Java.class: Java.java
@@ -42,11 +43,14 @@ go.exe: go.go
 d.exe: d.d
 	$(DC) -of=$@ $?
 
+pascal.exe: pascal.pas
+	$(PC) -o"$@" $?
+
 
 .PHONY: clean
 clean:
 	rm -f Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe
-	rm -f objectivec.d swift.exe go.exe objectivec.d d.o d.exe
+	rm -f objectivec.d swift.exe go.exe objectivec.d d.o d.exe pascal.o pascal.exe
 
 .PHONY: run
 run:
