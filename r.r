@@ -1,4 +1,5 @@
 cat("Hello from R!\n")
 flush.console()
+system("./d.exe")
 cat("Goodbye from R!\n")
 flush.console()
