@@ -37,6 +37,7 @@ chained:
 -   [R](r.r)
 -   [D](d.d)
 -   [Pascal](pascal.pas)
+-   [Perl](perl.pl)
 
 ## Installation and Compilation
 
@@ -70,6 +71,7 @@ compiling.
 | R                 |                                                                                                             | [R 3.4.4+](https://cran.r-project.org/)                                           |                                                                                            |
 | D                 | [DMD 2.09+](https://dlang.org/download.html)                                                                |                                                                                   | `dmd -of=d.exe d.d`                                                                        |
 | Pascal            | [Free Pascal 3.0.4+](https://www.freepascal.org/download.html)                                              |                                                                                   | `fpc -o"pascal.exe" pascal.pas`                                                            |
+| Perl              |                                                                                                             | [Perl 5.26.1+](https://www.perl.org/get.html)                                           |                                                                                            |
 
 ## Usage
 
@@ -96,6 +98,7 @@ listed compilation commands were used.
 | R                 | `R --vanilla --slave -f r.r` |
 | D                 | `./d.exe`                    |
 | Pascal            | `./pascal.exe`               |
+| Perl              | `perl perl.pl`               |
 
 ## License
 
