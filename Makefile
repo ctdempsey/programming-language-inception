@@ -14,6 +14,7 @@ SCC = scalac
 GRC = groovyc
 FSC = fsharpc
 RC = rustc
+COBC = cobc
 
 
 .PHONY: all
@@ -26,7 +27,7 @@ all1: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe
 all2: swift.exe go.exe d.exe pascal.exe dart.exe Scala.class Groovy.class
 
 .PHONY: all3
-all3: FSharp.exe Rust.exe
+all3: FSharp.exe Rust.exe cobol.exe
 
 
 Java.class: Java.java
@@ -74,6 +75,9 @@ FSharp.exe: FSharp.fs
 
 Rust.exe: Rust.rs
 	$(RC) -o $@ $?
+
+cobol.exe: cobol.cbl
+	$(COBC) -x -o $@ $?
 
 
 .PHONY: clean

@@ -43,6 +43,7 @@ chained:
 -   [Groovy](Groovy.groovy)
 -   [F#](FSharp.fs)
 -   [Rust](Rust.rs)
+-   [Cobol](cobol.cbl)
 
 ## Installation and Compilation
 
@@ -82,6 +83,7 @@ compiling.
 | Groovy            | [Groovy Compiler 2.5.9+](http://groovy-lang.org/download.html)                                              | [Groovy Runtime 2.5.9+](http://groovy-lang.org/download.html)                     | `groovyc Groovy.groovy`                                                                    |
 | F#                | [F# Compiler 10.2.3+](https://fsharp.org/use/linux/)                                                        | [Mono Runtime 6.8.0+](https://www.mono-project.com/download/stable/#download-lin) | `fsharpc FSharp.fs`                                                                        |
 | Rust              | [Rust Compiler 1.41.0+](https://www.rust-lang.org/tools/install)                                            |                                                                                   | `rustc -o Rust.exe Rust.rs`                                                                |
+| Cobol             | [GnuCOBOL 3.0+](https://sourceforge.net/projects/open-cobol/)                                               |                                                                                   | `cobc -x -o cobol.exe cobol.cbl`                                                           |
 
 ## Usage
 
@@ -114,6 +116,7 @@ listed compilation commands were used.
 | Groovy            | `groovy Groovy`              |
 | F#                | `mono FSharp.exe`            |
 | Rust              | `./Rust.exe`                 |
+| Cobol             | `./cobol.exe`                |
 
 ## License
 
