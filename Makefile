@@ -13,10 +13,11 @@ DARTC = dart2native
 SCC = scalac
 GRC = groovyc
 FSC = fsharpc
+RC = rustc
 
 
 .PHONY: all
-all: all1 all2 all3 
+all: all1 all2 all3
 
 .PHONY: all1
 all1: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe
@@ -25,7 +26,7 @@ all1: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe
 all2: swift.exe go.exe d.exe pascal.exe dart.exe Scala.class Groovy.class
 
 .PHONY: all3
-all3: FSharp.exe
+all3: FSharp.exe Rust.exe
 
 
 Java.class: Java.java
@@ -70,6 +71,9 @@ Groovy.class: Groovy.Groovy
 
 FSharp.exe: FSharp.fs
 	$(FSC) $?
+
+Rust.exe: Rust.rs
+	$(RC) -o $@ $?
 
 
 .PHONY: clean

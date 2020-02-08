@@ -42,6 +42,7 @@ chained:
 -   [Scala](Scala.scala)
 -   [Groovy](Groovy.groovy)
 -   [F#](FSharp.fs)
+-   [Rust](Rust.rs)
 
 ## Installation and Compilation
 
@@ -80,6 +81,7 @@ compiling.
 | Scala             | [Scala Compiler 2.11.12+](https://www.scala-lang.org/download/)                                             | [Scala Runtime 2.11.12+](https://www.scala-lang.org/download/)                    | `scalac Scala.scala`                                                                       |
 | Groovy            | [Groovy Compiler 2.5.9+](http://groovy-lang.org/download.html)                                              | [Groovy Runtime 2.5.9+](http://groovy-lang.org/download.html)                     | `groovyc Groovy.groovy`                                                                    |
 | F#                | [F# Compiler 10.2.3+](https://fsharp.org/use/linux/)                                                        | [Mono Runtime 6.8.0+](https://www.mono-project.com/download/stable/#download-lin) | `fsharpc FSharp.fs`                                                                        |
+| Rust              | [Rust Compiler 1.41.0+](https://www.rust-lang.org/tools/install)                                            |                                                                                   | `rustc -o Rust.exe Rust.rs`                                                                |
 
 ## Usage
 
@@ -111,6 +113,7 @@ listed compilation commands were used.
 | Scala             | `scala Scala`                |
 | Groovy            | `groovy Groovy`              |
 | F#                | `mono FSharp.exe`            |
+| Rust              | `./Rust.exe`                 |
 
 ## License
 
