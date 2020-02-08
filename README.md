@@ -41,6 +41,7 @@ chained:
 -   [Dart](dart.dart)
 -   [Scala](Scala.scala)
 -   [Groovy](Groovy.groovy)
+-   [F#](FSharp.fs)
 
 ## Installation and Compilation
 
@@ -64,7 +65,7 @@ compiling.
 | Python            |                                                                                                             | [Python 3](https://www.python.org/downloads/)                                     |                                                                                            |
 | C++               | [GCC](https://gcc.gnu.org/install/)                                                                         |                                                                                   | `g++ cplusplus.cpp -o cplusplus.exe`                                                       |
 | C#                | [MCS Compiler 6.8.0+](https://www.mono-project.com/download/stable/#download-lin)                           | [Mono Runtime 6.8.0+](https://www.mono-project.com/download/stable/#download-lin) | `mcs CSharp.cs`                                                                            |
-| Visual Basic .NET | [VBNC Compiler 6.8.0+](https://www.mono-project.com/download/stable/#download-lin)                          | [Mono Runtime 6.8.0+](https://www.mono-project.com/download/stable/#download-lin) | `vbnc vbdotnet.vb`                                                                         |
+| Visual Basic .NET | [VBNC Compiler 0.0.0.5943+](https://www.mono-project.com/download/stable/#download-lin)                     | [Mono Runtime 6.8.0+](https://www.mono-project.com/download/stable/#download-lin) | `vbnc vbdotnet.vb`                                                                         |
 | JavaScript        |                                                                                                             | [Node.js 8.10.0+](https://nodejs.org/en/download)                                 |                                                                                            |
 | PHP               |                                                                                                             | [PHP CLI 7.2+](https://www.php.net/downloads)                                     |                                                                                            |
 | Objective-C       | [GCC & GNUstep](https://www.techotopia.com/index.php/Installing_and_Using_GNUstep_and_Objective-C_on_Linux) |                                                                                   | ``gcc objectivec.m `gnustep-config --objc-flags` -lgnustep-base -lobjc -o objectivec.exe`` |
@@ -78,6 +79,7 @@ compiling.
 | Dart              | [Dart SDK 2.7.1+](https://dart.dev/get-dart)                                                                |                                                                                   | `dart2native dart.dart`                                                                    |
 | Scala             | [Scala Compiler 2.11.12+](https://www.scala-lang.org/download/)                                             | [Scala Runtime 2.11.12+](https://www.scala-lang.org/download/)                    | `scalac Scala.scala`                                                                       |
 | Groovy            | [Groovy Compiler 2.5.9+](http://groovy-lang.org/download.html)                                              | [Groovy Runtime 2.5.9+](http://groovy-lang.org/download.html)                     | `groovyc Groovy.groovy`                                                                    |
+| F#                | [F# Compiler 10.2.3+](https://fsharp.org/use/linux/)                                                        | [Mono Runtime 6.8.0+](https://www.mono-project.com/download/stable/#download-lin) | `fsharpc FSharp.fs`                                                                        |
 
 ## Usage
 
@@ -108,6 +110,7 @@ listed compilation commands were used.
 | Dart              | `./dart.exe`                 |
 | Scala             | `scala Scala`                |
 | Groovy            | `groovy Groovy`              |
+| F#                | `mono FSharp.exe`            |
 
 ## License
 
