@@ -39,6 +39,7 @@ chained:
 -   [Pascal](pascal.pas)
 -   [Perl](perl.pl)
 -   [Dart](dart.dart)
+-   [Scala](Scala.scala)
 
 ## Installation and Compilation
 
@@ -74,6 +75,7 @@ compiling.
 | Pascal            | [Free Pascal 3.0.4+](https://www.freepascal.org/download.html)                                              |                                                                                   | `fpc -o"pascal.exe" pascal.pas`                                                            |
 | Perl              |                                                                                                             | [Perl 5.26.1+](https://www.perl.org/get.html)                                     |                                                                                            |
 | Dart              | [Dart SDK 2.7.1+](https://dart.dev/get-dart)                                                                |                                                                                   | `dart2native dart.dart`                                                                    |
+| Scala             | [Scala Compiler 2.11.12+](https://www.scala-lang.org/download/)                                             | [Scala Runtime 2.11.12+](https://www.scala-lang.org/download/)                    | `scalac Scala.scala`                                                                       |
 
 ## Usage
 
@@ -102,6 +104,7 @@ listed compilation commands were used.
 | Pascal            | `./pascal.exe`               |
 | Perl              | `perl perl.pl`               |
 | Dart              | `./dart.exe`                 |
+| Scala             | `scala Scala`                |
 
 ## License
 
