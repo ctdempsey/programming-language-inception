@@ -1,2 +1,2 @@
-printf "Hello from F#!"
-printf "Goodbye from F#!"
+printfn "Hello from F#!"
+printfn "Goodbye from F#!"
