@@ -11,10 +11,11 @@ DC = dmd
 PC = fpc
 DARTC = dart2native
 SCC = scalac
+GRC = groovyc
 
 
 .PHONY: all
-all: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe swift.exe go.exe d.exe pascal.exe dart.exe Scala.class
+all: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe swift.exe go.exe d.exe pascal.exe dart.exe Scala.class Groovy.class
 
 
 Java.class: Java.java
@@ -53,6 +54,9 @@ dart.exe: dart.dart
 
 Scala.class: Scala.scala
 	$(SCC) $?
+
+Groovy.class: Groovy.Groovy
+	$(GRC) $?
 
 
 .PHONY: clean

@@ -40,6 +40,7 @@ chained:
 -   [Perl](perl.pl)
 -   [Dart](dart.dart)
 -   [Scala](Scala.scala)
+-   [Groovy](Groovy.groovy)
 
 ## Installation and Compilation
 
@@ -76,6 +77,7 @@ compiling.
 | Perl              |                                                                                                             | [Perl 5.26.1+](https://www.perl.org/get.html)                                     |                                                                                            |
 | Dart              | [Dart SDK 2.7.1+](https://dart.dev/get-dart)                                                                |                                                                                   | `dart2native dart.dart`                                                                    |
 | Scala             | [Scala Compiler 2.11.12+](https://www.scala-lang.org/download/)                                             | [Scala Runtime 2.11.12+](https://www.scala-lang.org/download/)                    | `scalac Scala.scala`                                                                       |
+| Groovy            | [Groovy Compiler 2.5.9+](http://groovy-lang.org/download.html)                                              | [Groovy Runtime 2.5.9+](http://groovy-lang.org/download.html)                     | `groovyc Groovy.groovy`                                                                    |
 
 ## Usage
 
@@ -105,6 +107,7 @@ listed compilation commands were used.
 | Perl              | `perl perl.pl`               |
 | Dart              | `./dart.exe`                 |
 | Scala             | `scala Scala`                |
+| Groovy            | `groovy Groovy`              |
 
 ## License
 
