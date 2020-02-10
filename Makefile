@@ -15,6 +15,8 @@ GRC = groovyc
 FSC = fsharpc
 RC = rustc
 COBC = cobc
+KC = kotlinc
+KCFLAGS = -include-runtime
 
 
 .PHONY: all
@@ -27,7 +29,7 @@ all1: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe
 all2: swift.exe go.exe d.exe pascal.exe dart.exe Scala.class Groovy.class
 
 .PHONY: all3
-all3: FSharp.exe Rust.exe cobol.exe
+all3: FSharp.exe Rust.exe cobol.exe kotlin.jar
 
 
 Java.class: Java.java
@@ -79,10 +81,13 @@ Rust.exe: Rust.rs
 cobol.exe: cobol.cbl
 	$(COBC) -x -o $@ $?
 
+kotlin.jar: kotlin.kt
+	$(KC) $? $(KCFLAGS) -d $@
+
 
 .PHONY: clean
 clean:
-	rm -f *.class *.exe *.o objectivec.d
+	rm -f *.class *.exe *.o objectivec.d *.jar
 
 .PHONY: run
 run:

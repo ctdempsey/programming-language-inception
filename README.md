@@ -45,6 +45,7 @@ chained:
 -   [Rust](Rust.rs)
 -   [Cobol](cobol.cbl)
 -   [Lisp](lisp.lisp)
+-   [Kotlin](kotlin.kt)
 
 ## Installation and Compilation
 
@@ -86,6 +87,7 @@ compiling.
 | Rust              | [Rust Compiler 1.41.0+](https://www.rust-lang.org/tools/install)                                            |                                                                                   | `rustc -o Rust.exe Rust.rs`                                                                |
 | Cobol             | [GnuCOBOL 3.0+](https://sourceforge.net/projects/open-cobol/)                                               |                                                                                   | `cobc -x -o cobol.exe cobol.cbl`                                                           |
 | Lisp              |                                                                                                             | [SBCL 2.0.1+](https://sourceforge.net/projects/sbcl/)                             |                                                                                            |
+| Kotlin            | [Kotlin Compiler 1.3.61+](https://kotlinlang.org/docs/tutorials/command-line.html)                          | [OpenJDK JRE 8+](https://openjdk.java.net/install/)                               | `kotlinc kotlin.kt -include-runtime -d kotlin.jar`                                         |
 
 ## Usage
 
@@ -120,6 +122,7 @@ listed compilation commands were used.
 | Rust              | `./Rust.exe`                 |
 | Cobol             | `./cobol.exe`                |
 | Lisp              | `sbcl --script lisp.lisp`    |
+| Kotlin            | `java -jar kotlin.jar`       |
 
 ## License
 
