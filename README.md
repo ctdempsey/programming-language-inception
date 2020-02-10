@@ -44,6 +44,7 @@ chained:
 -   [F#](FSharp.fs)
 -   [Rust](Rust.rs)
 -   [Cobol](cobol.cbl)
+-   [Lisp](lisp.lisp)
 
 ## Installation and Compilation
 
@@ -84,6 +85,7 @@ compiling.
 | F#                | [F# Compiler 10.2.3+](https://fsharp.org/use/linux/)                                                        | [Mono Runtime 6.8.0+](https://www.mono-project.com/download/stable/#download-lin) | `fsharpc FSharp.fs`                                                                        |
 | Rust              | [Rust Compiler 1.41.0+](https://www.rust-lang.org/tools/install)                                            |                                                                                   | `rustc -o Rust.exe Rust.rs`                                                                |
 | Cobol             | [GnuCOBOL 3.0+](https://sourceforge.net/projects/open-cobol/)                                               |                                                                                   | `cobc -x -o cobol.exe cobol.cbl`                                                           |
+| Lisp              |                                                                                                             | [SBCL 2.0.1+](https://sourceforge.net/projects/sbcl/)                             |                                                                                            |
 
 ## Usage
 
@@ -117,6 +119,7 @@ listed compilation commands were used.
 | F#                | `mono FSharp.exe`            |
 | Rust              | `./Rust.exe`                 |
 | Cobol             | `./cobol.exe`                |
+| Lisp              | `sbcl --script lisp.lisp`    |
 
 ## License
 
