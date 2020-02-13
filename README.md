@@ -47,6 +47,7 @@ chained:
 -   [Lisp](lisp.lisp)
 -   [Kotlin](kotlin.kt)
 -   [Lua](lua.lua)
+-   [Fortran](fortran.f90)
 
 ## Installation and Compilation
 
@@ -90,6 +91,7 @@ compiling.
 | Lisp              |                                                                                                             | [SBCL 2.0.1+](https://sourceforge.net/projects/sbcl/)                             |                                                                                            |
 | Kotlin            | [Kotlin Compiler 1.3.61+](https://kotlinlang.org/docs/tutorials/command-line.html)                          | [OpenJDK JRE 8+](https://openjdk.java.net/install/)                               | `kotlinc kotlin.kt -include-runtime -d kotlin.jar`                                         |
 | Lua               |                                                                                                             | [Lua 5.3.3+](https://www.lua.org/download.html)                                   |                                                                                            |
+| Fortran           | [GCC](https://gcc.gnu.org/install/)                                                                         |                                                                                   | `gfortran fortran.f90 -o fortran.exe`                                                      |
 
 ## Usage
 
@@ -126,6 +128,7 @@ listed compilation commands were used.
 | Lisp              | `sbcl --script lisp.lisp`    |
 | Kotlin            | `java -jar kotlin.jar`       |
 | Lua               | `lua lua.lua`                |
+| Fortran           | `./fortran.exe`              |
 
 ## License
 

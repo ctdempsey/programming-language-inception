@@ -17,6 +17,7 @@ RC = rustc
 COBC = cobc
 KC = kotlinc
 KCFLAGS = -include-runtime
+FC = gfortran
 
 
 .PHONY: all
@@ -29,7 +30,7 @@ all1: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe
 all2: swift.exe go.exe d.exe pascal.exe dart.exe Scala.class Groovy.class
 
 .PHONY: all3
-all3: FSharp.exe Rust.exe cobol.exe kotlin.jar
+all3: FSharp.exe Rust.exe cobol.exe kotlin.jar fortran.exe
 
 
 Java.class: Java.java
@@ -83,6 +84,9 @@ cobol.exe: cobol.cbl
 
 kotlin.jar: kotlin.kt
 	$(KC) $? $(KCFLAGS) -d $@
+
+fortran.exe: fortran.f90
+	$(FC) $? -o $@
 
 
 .PHONY: clean
