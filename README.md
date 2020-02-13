@@ -46,6 +46,7 @@ chained:
 -   [Cobol](cobol.cbl)
 -   [Lisp](lisp.lisp)
 -   [Kotlin](kotlin.kt)
+-   [Lua](lua.lua)
 
 ## Installation and Compilation
 
@@ -88,6 +89,7 @@ compiling.
 | Cobol             | [GnuCOBOL 3.0+](https://sourceforge.net/projects/open-cobol/)                                               |                                                                                   | `cobc -x -o cobol.exe cobol.cbl`                                                           |
 | Lisp              |                                                                                                             | [SBCL 2.0.1+](https://sourceforge.net/projects/sbcl/)                             |                                                                                            |
 | Kotlin            | [Kotlin Compiler 1.3.61+](https://kotlinlang.org/docs/tutorials/command-line.html)                          | [OpenJDK JRE 8+](https://openjdk.java.net/install/)                               | `kotlinc kotlin.kt -include-runtime -d kotlin.jar`                                         |
+| Lua               |                                                                                                             | [Lua 5.3.3+](https://www.lua.org/download.html)                                   |                                                                                            |
 
 ## Usage
 
@@ -123,6 +125,7 @@ listed compilation commands were used.
 | Cobol             | `./cobol.exe`                |
 | Lisp              | `sbcl --script lisp.lisp`    |
 | Kotlin            | `java -jar kotlin.jar`       |
+| Lua               | `lua lua.lua`                |
 
 ## License
 
