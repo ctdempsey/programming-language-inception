@@ -51,6 +51,7 @@ chained:
 -   [PowerShell](powershell.ps1)
 -   [Ada](adalang.adb)
 -   [Erlang](erlanglang.erl)
+-   [Julia](julia.jl)
 
 ## Installation and Compilation
 
@@ -98,6 +99,7 @@ compiling.
 | PowerShell        |                                                                                                             | [PowerShell 6.2.4+](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7) |                                                                                            |
 | Ada               | [GCC](https://gcc.gnu.org/install/)                                                                         |                                                                                                                                          | `gnatmake -B -o adalang.exe adalang.adb`                                                   |
 | Erlang            | [Erlang/OTP 22.2+](https://www.erlang.org/downloads)                                                        |                                                                                                                                          | `erlc erlanglang.erl`                                                                      |
+| Julia             |                                                                                                             | [Julia 1.0.4+](https://julialang.org/downloads/)                                                                                         |                                                                                            |
 
 ## Usage
 
@@ -138,6 +140,7 @@ listed compilation commands were used.
 | PowerShell        | `pwsh powershell.ps1`                         |
 | Ada               | `./adalang.exe`                               |
 | Erlang            | `erl -noshell -run erlanglang -run init stop` |
+| Julia             | `julia julia.jl`                              |
 
 ## License
 
