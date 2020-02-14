@@ -53,6 +53,7 @@ chained:
 -   [Erlang](erlanglang.erl)
 -   [Julia](julia.jl)
 -   [ML](ml.sml)
+-   [Haskell](haskell.hs)
 
 ## Installation and Compilation
 
@@ -102,6 +103,7 @@ compiling.
 | Erlang            | [Erlang/OTP 22.2+](https://www.erlang.org/downloads)                                                        |                                                                                                                                          | `erlc erlanglang.erl`                                                                      |
 | Julia             |                                                                                                             | [Julia 1.0.4+](https://julialang.org/downloads/)                                                                                         |                                                                                            |
 | ML                | [MLton Compiler 20180207](https://sourceforge.net/projects/mlton/)                                          |                                                                                                                                          | `mlton -output ml.exe ml.sml`                                                              |
+| Haskell           | [GHC 7.10.3+](https://www.haskell.org/downloads/)                                                           |                                                                                                                                          | `ghc -o haskell.exe haskell.hs`                                                            |
 
 ## Usage
 
@@ -144,6 +146,7 @@ listed compilation commands were used.
 | Erlang            | `erl -noshell -run erlanglang -run init stop` |
 | Julia             | `julia julia.jl`                              |
 | ML                | `./ml.exe`                                    |
+| Haskell           | `./haskell.exe`                               |
 
 ## License
 

@@ -21,6 +21,7 @@ FC = gfortran
 ADAC = gnatmake
 ELC = erlc
 MLC = mlton
+HC = ghc
 
 
 .PHONY: all
@@ -36,7 +37,7 @@ all2: swift.exe go.exe d.exe pascal.exe dart.exe Scala.class Groovy.class
 all3: FSharp.exe Rust.exe cobol.exe kotlin.jar fortran.exe adalang.exe
 
 .PHONY: all4
-all4: erlanglang.beam ml.exe
+all4: erlanglang.beam ml.exe haskell.exe
 
 
 Java.class: Java.java
@@ -103,10 +104,13 @@ erlanglang.beam: erlanglang.erl
 ml.exe: ml.sml
 	$(MLC) -output $@ $?
 
+haskell.exe: haskell.hs
+	$(HC) -o $@ $?
+
 
 .PHONY: clean
 clean:
-	rm -f *.class *.exe *.o objectivec.d *.jar *.ali *.beam
+	rm -f *.class *.exe *.o objectivec.d *.jar *.ali *.beam *.hi
 
 .PHONY: run
 run:
