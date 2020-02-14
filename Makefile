@@ -18,6 +18,7 @@ COBC = cobc
 KC = kotlinc
 KCFLAGS = -include-runtime
 FC = gfortran
+ADAC = gnatmake
 
 
 .PHONY: all
@@ -30,7 +31,7 @@ all1: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe
 all2: swift.exe go.exe d.exe pascal.exe dart.exe Scala.class Groovy.class
 
 .PHONY: all3
-all3: FSharp.exe Rust.exe cobol.exe kotlin.jar fortran.exe
+all3: FSharp.exe Rust.exe cobol.exe kotlin.jar fortran.exe adalang.exe
 
 
 Java.class: Java.java
@@ -88,10 +89,13 @@ kotlin.jar: kotlin.kt
 fortran.exe: fortran.f90
 	$(FC) $? -o $@
 
+adalang.exe: adalang.adb
+	$(ADAC) -B -o $@ $?
+
 
 .PHONY: clean
 clean:
-	rm -f *.class *.exe *.o objectivec.d *.jar
+	rm -f *.class *.exe *.o objectivec.d *.jar *.ali
 
 .PHONY: run
 run:

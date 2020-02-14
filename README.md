@@ -49,6 +49,7 @@ chained:
 -   [Lua](lua.lua)
 -   [Fortran](fortran.f90)
 -   [PowerShell](powershell.ps1)
+-   [Ada](adalang.adb)
 
 ## Installation and Compilation
 
@@ -94,6 +95,7 @@ compiling.
 | Lua               |                                                                                                             | [Lua 5.3.3+](https://www.lua.org/download.html)                                                                                          |                                                                                            |
 | Fortran           | [GCC](https://gcc.gnu.org/install/)                                                                         |                                                                                                                                          | `gfortran fortran.f90 -o fortran.exe`                                                      |
 | PowerShell        |                                                                                                             | [PowerShell 6.2.4+](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7) |                                                                                            |
+| Ada               | [GCC](https://gcc.gnu.org/install/)                                                                         |                                                                                                                                          | `gnatmake -B -o adalang.exe adalang.adb`                                                   |
 
 ## Usage
 
@@ -132,6 +134,7 @@ listed compilation commands were used.
 | Lua               | `lua lua.lua`                |
 | Fortran           | `./fortran.exe`              |
 | PowerShell        | `pwsh powershell.ps1`        |
+| Ada               | `./adalang.exe`              |
 
 ## License
 

@@ -557,6 +557,13 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-## D Lang
+### D Lang
 
 !d.d
+
+### Ada Template
+# Object file
+*.o
+
+# Ada Library Information
+*.ali
