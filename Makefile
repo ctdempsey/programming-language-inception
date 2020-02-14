@@ -19,10 +19,11 @@ KC = kotlinc
 KCFLAGS = -include-runtime
 FC = gfortran
 ADAC = gnatmake
+ELC = erlc
 
 
 .PHONY: all
-all: all1 all2 all3
+all: all1 all2 all3 all4
 
 .PHONY: all1
 all1: Java.class c.exe cplusplus.exe CSharp.exe vbdotnet.exe objectivec.exe
@@ -32,6 +33,9 @@ all2: swift.exe go.exe d.exe pascal.exe dart.exe Scala.class Groovy.class
 
 .PHONY: all3
 all3: FSharp.exe Rust.exe cobol.exe kotlin.jar fortran.exe adalang.exe
+
+.PHONY: all4
+all4: erlanglang.beam
 
 
 Java.class: Java.java
@@ -92,10 +96,13 @@ fortran.exe: fortran.f90
 adalang.exe: adalang.adb
 	$(ADAC) -B -o $@ $?
 
+erlanglang.beam: erlanglang.erl
+	$(ELC) $?
+
 
 .PHONY: clean
 clean:
-	rm -f *.class *.exe *.o objectivec.d *.jar *.ali
+	rm -f *.class *.exe *.o objectivec.d *.jar *.ali *.beam
 
 .PHONY: run
 run:

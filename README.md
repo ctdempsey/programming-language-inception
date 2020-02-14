@@ -50,6 +50,7 @@ chained:
 -   [Fortran](fortran.f90)
 -   [PowerShell](powershell.ps1)
 -   [Ada](adalang.adb)
+-   [Erlang](erlanglang.erl)
 
 ## Installation and Compilation
 
@@ -96,6 +97,7 @@ compiling.
 | Fortran           | [GCC](https://gcc.gnu.org/install/)                                                                         |                                                                                                                                          | `gfortran fortran.f90 -o fortran.exe`                                                      |
 | PowerShell        |                                                                                                             | [PowerShell 6.2.4+](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7) |                                                                                            |
 | Ada               | [GCC](https://gcc.gnu.org/install/)                                                                         |                                                                                                                                          | `gnatmake -B -o adalang.exe adalang.adb`                                                   |
+| Erlang            | [Erlang/OTP 22.2+](https://www.erlang.org/downloads)                                                        |                                                                                                                                          | `erlc erlanglang.erl`                                                                      |
 
 ## Usage
 
@@ -105,36 +107,37 @@ individual program are listed below, assuming using a typical Linux terminal,
 all required runtimes and interpreters for each program are installed, and the
 listed compilation commands were used.
 
-| Language          | Command                      |
-| ----------------- | ---------------------------- |
-| Java              | `java -cp ./ Java.class`     |
-| C                 | `./c.exe`                    |
-| Python            | `python3 python.py`          |
-| C++               | `./cplusplus.exe`            |
-| C#                | `./CSharp.exe`               |
-| Visual Basic .NET | `./vbdotnet.exe`             |
-| JavaScript        | `node javascript.js`         |
-| PHP               | `php php.php`                |
-| Objective-C       | `./objectivec.exe`           |
-| Ruby              | `ruby ruby.rb`               |
-| Swift             | `./swift.exe`                |
-| Go                | `./go.exe`                   |
-| R                 | `R --vanilla --slave -f r.r` |
-| D                 | `./d.exe`                    |
-| Pascal            | `./pascal.exe`               |
-| Perl              | `perl perl.pl`               |
-| Dart              | `./dart.exe`                 |
-| Scala             | `scala Scala`                |
-| Groovy            | `groovy Groovy`              |
-| F#                | `mono FSharp.exe`            |
-| Rust              | `./Rust.exe`                 |
-| Cobol             | `./cobol.exe`                |
-| Lisp              | `sbcl --script lisp.lisp`    |
-| Kotlin            | `java -jar kotlin.jar`       |
-| Lua               | `lua lua.lua`                |
-| Fortran           | `./fortran.exe`              |
-| PowerShell        | `pwsh powershell.ps1`        |
-| Ada               | `./adalang.exe`              |
+| Language          | Command                                       |
+| ----------------- | --------------------------------------------- |
+| Java              | `java -cp ./ Java.class`                      |
+| C                 | `./c.exe`                                     |
+| Python            | `python3 python.py`                           |
+| C++               | `./cplusplus.exe`                             |
+| C#                | `./CSharp.exe`                                |
+| Visual Basic .NET | `./vbdotnet.exe`                              |
+| JavaScript        | `node javascript.js`                          |
+| PHP               | `php php.php`                                 |
+| Objective-C       | `./objectivec.exe`                            |
+| Ruby              | `ruby ruby.rb`                                |
+| Swift             | `./swift.exe`                                 |
+| Go                | `./go.exe`                                    |
+| R                 | `R --vanilla --slave -f r.r`                  |
+| D                 | `./d.exe`                                     |
+| Pascal            | `./pascal.exe`                                |
+| Perl              | `perl perl.pl`                                |
+| Dart              | `./dart.exe`                                  |
+| Scala             | `scala Scala`                                 |
+| Groovy            | `groovy Groovy`                               |
+| F#                | `mono FSharp.exe`                             |
+| Rust              | `./Rust.exe`                                  |
+| Cobol             | `./cobol.exe`                                 |
+| Lisp              | `sbcl --script lisp.lisp`                     |
+| Kotlin            | `java -jar kotlin.jar`                        |
+| Lua               | `lua lua.lua`                                 |
+| Fortran           | `./fortran.exe`                               |
+| PowerShell        | `pwsh powershell.ps1`                         |
+| Ada               | `./adalang.exe`                               |
+| Erlang            | `erl -noshell -run erlanglang -run init stop` |
 
 ## License
 
