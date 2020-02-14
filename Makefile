@@ -20,6 +20,7 @@ KCFLAGS = -include-runtime
 FC = gfortran
 ADAC = gnatmake
 ELC = erlc
+MLC = mlton
 
 
 .PHONY: all
@@ -35,7 +36,7 @@ all2: swift.exe go.exe d.exe pascal.exe dart.exe Scala.class Groovy.class
 all3: FSharp.exe Rust.exe cobol.exe kotlin.jar fortran.exe adalang.exe
 
 .PHONY: all4
-all4: erlanglang.beam
+all4: erlanglang.beam ml.exe
 
 
 Java.class: Java.java
@@ -98,6 +99,9 @@ adalang.exe: adalang.adb
 
 erlanglang.beam: erlanglang.erl
 	$(ELC) $?
+
+ml.exe: ml.sml
+	$(MLC) -output $@ $?
 
 
 .PHONY: clean

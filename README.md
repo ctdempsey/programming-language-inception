@@ -52,6 +52,7 @@ chained:
 -   [Ada](adalang.adb)
 -   [Erlang](erlanglang.erl)
 -   [Julia](julia.jl)
+-   [ML](ml.sml)
 
 ## Installation and Compilation
 
@@ -100,6 +101,7 @@ compiling.
 | Ada               | [GCC](https://gcc.gnu.org/install/)                                                                         |                                                                                                                                          | `gnatmake -B -o adalang.exe adalang.adb`                                                   |
 | Erlang            | [Erlang/OTP 22.2+](https://www.erlang.org/downloads)                                                        |                                                                                                                                          | `erlc erlanglang.erl`                                                                      |
 | Julia             |                                                                                                             | [Julia 1.0.4+](https://julialang.org/downloads/)                                                                                         |                                                                                            |
+| ML                | [MLton Compiler 20180207](https://sourceforge.net/projects/mlton/)                                          |                                                                                                                                          | `mlton -output ml.exe ml.sml`                                                              |
 
 ## Usage
 
@@ -141,6 +143,7 @@ listed compilation commands were used.
 | Ada               | `./adalang.exe`                               |
 | Erlang            | `erl -noshell -run erlanglang -run init stop` |
 | Julia             | `julia julia.jl`                              |
+| ML                | `./ml.exe`                                    |
 
 ## License
 
