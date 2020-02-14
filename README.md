@@ -4,6 +4,8 @@ A  project where a program is coded in as many languages
 as is feasible, chained together with each program calling the next as a
 subprocess, across every single language used.
 
+![Project Output](docs/screenshots/program-output.gif "Project Output")
+
 The self-imposed restrictions are:
 
 -   Each program is coded using a language from and chained in the order listed
