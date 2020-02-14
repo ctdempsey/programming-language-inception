@@ -4,7 +4,7 @@ A  project where a program is coded in as many languages
 as is feasible, chained together with each program calling the next as a
 subprocess, across every single language used.
 
-![alt text](docs/screenshots/program-output.gif "Project Output")
+![Project Output](docs/screenshots/program-output.gif)
 
 The self-imposed restrictions are:
 
